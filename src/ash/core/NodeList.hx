@@ -110,7 +110,7 @@ class NodeList<TNode:Node<TNode>>
 
     public function iterator():Iterator<TNode>
     {
-        return new GenericListIterator(head);
+        return GenericListIterator.get(head);
     }
 
     /**
