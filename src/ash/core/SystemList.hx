@@ -94,6 +94,6 @@ class SystemList
 
     public function iterator():Iterator<System>
     {
-        return GenericListIterator.get(head);
+        return SystemListIterator.getFromPool(head);
     }
 }

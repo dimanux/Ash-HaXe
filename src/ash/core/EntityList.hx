@@ -58,6 +58,6 @@ class EntityList
 
     public function iterator():Iterator<Entity>
     {
-        return GenericListIterator.get(head);
+        return EntityListIterator.getFromPool(head);
     }
 }

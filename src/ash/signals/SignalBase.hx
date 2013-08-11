@@ -207,6 +207,6 @@ class SignalBase<TListener>
 
     private function iterator():Iterator<ListenerNode<TListener>>
     {
-        return GenericListIterator.get(head);
+        return SignalIterator.getFromPool(head);
     }
 }
